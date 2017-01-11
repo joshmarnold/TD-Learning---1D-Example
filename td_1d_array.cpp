@@ -15,19 +15,16 @@ int main(int argc, const char * argv[]) {
     
     srand(5);
     
-    double gamma=0.5;
+    double gamma=0.5, current_value, td_error;
     
-    double reward[NUM] = {0};
-    double nstates[NUM] = {0};
+    double reward[NUM] = {0}, nstates[NUM] = {0};
     
     // designate goal state (position 1 in this case)
-    int goal = 1;
+    // r used to store reward
+    int goal = 1, pos = 0, r;;
     
     reward[goal] = 1;
-    
-    int pos = 0, r;  // r used to store reward
-    double current_value, td_error;
-    
+
     // Break learning up into episodes
     for(int i = 0;i<50;i++)
     {
