@@ -18,14 +18,8 @@ int main(int argc, const char * argv[]) {
     double gamma=0.5;
     
     // generate reward array and nstates
-    double reward[NUM];
-    double nstates[NUM];
-    
-    //initialize
-    for(int i=0;i<NUM;i++) {
-        nstates[i] = 0;
-        reward[i] = 0;
-    }
+    double reward[NUM] = {0};
+    double nstates[NUM] = {0};
     
     // designate goal state (position 1 in this case)
     int goal = 1;
