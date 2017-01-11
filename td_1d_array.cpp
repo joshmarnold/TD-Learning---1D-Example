@@ -25,15 +25,12 @@ int main(int argc, const char * argv[]) {
     
     reward[goal] = 1;
     
-    int pos=0;
-    int r;  // used to store reward
-    double current_value;
+    int pos = 0, r;  // r used to store reward
+    double current_value, td_error;
     
     // Break learning up into episodes
     for(int i = 0;i<50;i++)
     {
-        double td_error;
-        
         // generate random starting position
         pos = rand() % NUM;
         
