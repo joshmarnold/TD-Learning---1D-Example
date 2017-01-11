@@ -1,6 +1,6 @@
-// 1D TD-learning example
-// included output to see
-// how algorithm is working
+// Simple 1D TD-learning demonstration.
+// Output included for intuition
+// on how the algorithm is working
 #include <iostream>
 #include <iomanip>
 #include <thread>
