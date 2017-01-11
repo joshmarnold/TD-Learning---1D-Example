@@ -21,7 +21,7 @@ int main(int argc, const char * argv[]) {
     
     // designate goal state (position 1 in this case)
     // r used to store reward
-    int goal = 1, pos = 0, r;;
+    int goal = 1, pos = 0, r;
     
     reward[goal] = 1;
 
