@@ -38,8 +38,7 @@ int main(int argc, const char * argv[]) {
         // is found. if goal is not found, start over
         for(int j =0;j<100;j++)
         {
-            int setwi = 9;
-            int setp = 3;
+            int setwi = 9, setp = 3;
             cout << setw(7) << left << i << ": ";
             for(int i=0;i<NUM;i++) {
                 if(i == pos)
@@ -69,8 +68,7 @@ int main(int argc, const char * argv[]) {
             // The next possible states are to the
             // immediate left and right
             // Get the values of these neighboring states
-            double left_val = 0;
-            double right_val = 0;
+            double left_val = 0, right_val = 0;
             if(pos==0)  /* going left */
                 left_val = nstates[NUM-1]; // position needs to wrap around to end
             else
