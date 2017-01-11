@@ -17,7 +17,6 @@ int main(int argc, const char * argv[]) {
     
     double gamma=0.5;
     
-    // generate reward array and nstates
     double reward[NUM] = {0};
     double nstates[NUM] = {0};
     
